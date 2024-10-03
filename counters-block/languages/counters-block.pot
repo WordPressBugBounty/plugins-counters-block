@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Counters Block 1.1.1\n"
+"Project-Id-Version: Counters Block 1.1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/counters-block\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-05-06T14:25:00+00:00\n"
+"POT-Creation-Date: 2024-10-03T05:38:11+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.8.1\n"
 "X-Domain: counters-block\n"
@@ -30,260 +30,215 @@ msgstr ""
 msgid "https://bplugins.com"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13518
+#: build/index.js:1
 msgid "General"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13519
+#: build/index.js:1
 msgid "Style"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13522
+#: build/index.js:1
 msgid "Default"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13523
+#: build/index.js:1
 msgid "Theme 1"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13524
+#: build/index.js:1
 msgid "Theme 2"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13525
+#: build/index.js:1
 msgid "Theme 3"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13528
+#: build/index.js:1
 msgid "Top"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13529
-#: dist/editor.js:14111
+#: build/index.js:1
 msgid "Label"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13532
+#: build/index.js:1
 msgid "None"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13533
+#: build/index.js:1
 msgid "Coma (1,000)"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13534
+#: build/index.js:1
 msgid "Space (1 000)"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13609
+#: build/index.js:1
 msgid "Add or Remove counters"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13613
-#: dist/editor.js:13768
+#: build/index.js:1
 msgid "Background:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13615
+#: build/index.js:1
 msgid "Icon:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13617
+#: build/index.js:1
 msgid "Start Number:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13619
+#: build/index.js:1
 msgid "End Number:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13622
+#: build/index.js:1
 msgid "Prefix:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13627
+#: build/index.js:1
 msgid "Suffix:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13631
+#: build/index.js:1
 msgid "Number Color:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13633
+#: build/index.js:1
 msgid "Label Color:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13636
+#: build/index.js:1
 msgid "Remove"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13638
+#: build/index.js:1
 msgid "Duplicate"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13643
-#: dist/editor.js:13792
+#: build/index.js:1
 msgid "Add New Counter"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13648
+#: build/index.js:1
 msgid "Layout Settings"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13650
+#: build/index.js:1
 msgid "Theme:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13723
+#: build/index.js:1
 msgid "Columns:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13728
+#: build/index.js:1
 msgid "Column Gap:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13730
+#: build/index.js:1
 msgid "Row Gap:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13734
+#: build/index.js:1
 msgid "Counters Settings"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13735
+#: build/index.js:1
 msgid "Duration:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13736
+#: build/index.js:1
 msgid "Duration in milliseconds:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13738
+#: build/index.js:1
 msgid "Separator"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13742
+#: build/index.js:1
 msgid "Counter Elements"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13743
+#: build/index.js:1
 msgid "Show Icon"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13745
+#: build/index.js:1
 msgid "Icon Size:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13749
+#: build/index.js:1
 msgid "Icon Position:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13757
+#: build/index.js:1
 msgid "Number Typography:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13759
+#: build/index.js:1
 msgid "Show Label"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13761
+#: build/index.js:1
 msgid "Label Typography:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13767
+#: build/index.js:1
 msgid "Counters"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13770
-#: dist/editor.js:13779
+#: build/index.js:1
 msgid "Padding:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13774
+#: build/index.js:1
 msgid "Single Counter"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13775
+#: build/index.js:1
 msgid "Width:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13777
+#: build/index.js:1
 msgid "Height:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13781
+#: build/index.js:1
 msgid "Border:"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13783
+#: build/index.js:1
 msgid "Shadow:"
 msgstr ""
 
+#: build/block.json
 #: inc/block.json
 msgctxt "block title"
 msgid "Counters"
 msgstr ""
 
+#: build/block.json
 #: inc/block.json
 msgctxt "block description"
 msgid "Display Number as animated counter."
 msgstr ""
 
+#: build/block.json
 #: inc/block.json
 msgctxt "block keyword"
 msgid "counter"
 msgstr ""
 
+#: build/block.json
 #: inc/block.json
 msgctxt "block keyword"
 msgid "number counter"
 msgstr ""
 
+#: build/block.json
 #: inc/block.json
 msgctxt "block keyword"
 msgid "at a glance"

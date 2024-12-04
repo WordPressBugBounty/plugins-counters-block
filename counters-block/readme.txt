@@ -3,7 +3,7 @@ Contributors: bplugins, abuhayat, charlescormier
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, counters, counter, number counter block, Gutenberg block
 Requires at least: 6.2+
-Tested up to: 6.6.2
+Tested up to: 6.7.1
 Stable tag: 1.1.2
 Requires PHP: 7.1
 License: GPLv3 or later
@@ -112,49 +112,6 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
-
-= 1.1.2 - 3 Oct 2024 =
-* Fix pattern issue
-
-= 1.1.1 - 6 May 2024 =
-* Add separators in the number.
-* Update icon library
-
-= 1.1.0 =
-* Fix script not loaded
-
-= 1.0.9 =
-* Counter starts when visible
-
-= 1.0.8 =
-* Reduce asset loads
-
-= 1.0.7 =
-* Add translate feature
-
-= 1.0.6 =
-* Fix HTML Render
-
-= 1.0.5 =
-* Reduce PHP Code
-* Performance Improvement
-
-= 1.0.4 =
-* Reduce PHP Code
-* Typography fix
-
-= 1.0.2 =
-* Performance upgrade
-
-= 1.0.1 =
-* Fix text-align
-* Performance Upgrade
-
-= 1.0.0 =
-* Initial Release
-
-
-== Upgrade Notice ==
 
 = 1.1.2 - 3 Oct 2024 =
 * Fix pattern issue

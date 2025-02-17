@@ -10,12 +10,11 @@
     "number counter",
     "at a glance"
   ],
-  "version": "1.1.2",
   "textdomain": "counters-block",
   "attributes": {
     "align": {
       "type": "string",
-      "default": ""
+      "default": "wide"
     },
     "counters": {
       "type": "array",

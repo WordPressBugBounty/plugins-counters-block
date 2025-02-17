@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Counters Block
  * Description: Display Number as animated counter( start to end ).
- * Version: 1.1.2
+ * Version: 1.1.3
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -14,7 +14,7 @@
 if ( !defined( 'ABSPATH' ) ) { exit; }
 
 // Constant
-define( 'CTRB_VERSION', isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.2' );
+define( 'CTRB_VERSION', isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.3' );
 define( 'CTRB_DIR_URL', plugin_dir_url( __FILE__ ) );
 define( 'CTRB_DIR_PATH', plugin_dir_path( __FILE__ ) );
 

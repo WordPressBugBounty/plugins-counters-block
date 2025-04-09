@@ -151,7 +151,7 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 = 1.0.1 =
 * Fix text-align
-* Performance Upgrade
+* Performance Upgrade.
 
 = 1.0.0 =
 * Initial Release.

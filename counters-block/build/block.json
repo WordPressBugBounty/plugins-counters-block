@@ -3,6 +3,7 @@
   "apiVersion": 2,
   "name": "ctrb/counters",
   "title": "Counters",
+  "version": "2.0.2",
   "description": "Display Number as animated counter.",
   "category": "widgets",
   "keywords": [
@@ -21,7 +22,7 @@
       "default": [
         {
           "background": {
-            "color": "#4527a4"
+            "color": "#146EF5"
           },
           "icon": {
             "class": "fa fa-puzzle-piece",
@@ -31,6 +32,7 @@
           "number": {
             "start": 0,
             "end": 30,
+            "stagger": 0,
             "prefix": "",
             "suffix": "+",
             "color": "#fff"
@@ -42,7 +44,7 @@
         },
         {
           "background": {
-            "color": "#4527a4"
+            "color": "#146EF5"
           },
           "icon": {
             "class": "fa fa-thumbs-up",
@@ -52,6 +54,7 @@
           "number": {
             "start": 0,
             "end": 380,
+            "stagger": 0,
             "prefix": "",
             "suffix": "K+",
             "color": "#fff"
@@ -63,7 +66,7 @@
         },
         {
           "background": {
-            "color": "#4527a4"
+            "color": "#146EF5"
           },
           "icon": {
             "class": "fa fa-award",
@@ -73,6 +76,7 @@
           "number": {
             "start": 0,
             "end": 90,
+            "stagger": 0,
             "prefix": "",
             "suffix": "",
             "color": "#fff"
@@ -155,9 +159,9 @@
       "type": "object",
       "default": {
         "fontSize": {
-          "desktop": 48,
-          "tablet": 40,
-          "mobile": 32
+          "desktop": "48px",
+          "tablet": "40px",
+          "mobile": "32px"
         }
       }
     },
@@ -165,13 +169,27 @@
       "type": "boolean",
       "default": true
     },
+    "isSubLabel": {
+      "type": "boolean",
+      "default": false
+    },
     "labelTypo": {
       "type": "object",
       "default": {
         "fontSize": {
-          "desktop": 22,
-          "tablet": 20,
-          "mobile": 18
+          "desktop": "22px",
+          "tablet": "20px",
+          "mobile": "18px"
+        }
+      }
+    },
+    "subLabelTypo": {
+      "type": "object",
+      "default": {
+        "fontSize": {
+          "desktop": "14px",
+          "tablet": "12px",
+          "mobile": "12px"
         }
       }
     },
@@ -191,6 +209,83 @@
     "counterShadow": {
       "type": "object",
       "default": {}
+    },
+    "counterMultiShadow": {
+      "type": "array",
+      "default": [
+        {
+          "hOffset": "0px",
+          "vOffset": "4px",
+          "blur": "6px",
+          "spread": "-1px",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "isInset": false
+        },
+        {
+          "hOffset": "0px",
+          "vOffset": "2px",
+          "blur": "4px",
+          "spread": "-2px",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "isInset": false
+        }
+      ]
+    },
+    "counterHoverMultiShadow": {
+      "type": "array",
+      "default": [
+        {
+          "hOffset": "0px",
+          "vOffset": "10px",
+          "blur": "15px",
+          "spread": "-3px",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "isInset": false
+        },
+        {
+          "hOffset": "0px",
+          "vOffset": "4px",
+          "blur": "6px",
+          "spread": "-4px",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "isInset": false
+        }
+      ]
+    },
+    "numberBox": {
+      "type": "object",
+      "default": {}
+    },
+    "iconContainer": {
+      "type": "object",
+      "default": {
+        "dimensions": {
+          "height": "64px",
+          "width": "64px"
+        }
+      }
+    },
+    "circle": {
+      "type": "object",
+      "default": {
+        "radius": 70,
+        "stroke": 9
+      }
+    },
+    "proControls": {
+      "type": "object",
+      "default": {
+        "isReverse": false,
+        "decimals": 0,
+        "easing": "linear",
+        "delay": 0,
+        "repeatOnScroll": false,
+        "isAnimateIcon": false,
+        "animationType": "classic",
+        "rollingStaggerMode": "per-counter",
+        "trigger": "onVisible",
+        "customTriggerSelector": ""
+      }
     }
   },
   "supports": {
@@ -207,10 +302,7 @@
   },
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": [
-    "file:./view.css",
-    "fontAwesome"
-  ],
+  "style": "file:./view.css",
   "render": "file:./render.php",
   "viewScript": "file:./view.js"
 }

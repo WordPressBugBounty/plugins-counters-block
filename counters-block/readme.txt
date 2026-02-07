@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, counters, counter, number counter block, Gutenberg block
 Requires at least: 6.5+
 Tested up to: 6.9
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -253,6 +253,13 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 2.0.3 – 7 Feb 2026 =
+* Enhanced the Theme Switcher UI for the Counter block (editor-only).
+* Theme selector now opens in a Popover for a cleaner experience.
+* Popover automatically closes when clicking outside.
+* Improved theme selection interaction and visual feedback.
+* No changes to frontend output.
 
 
 = 2.0.2 – 5 Feb 2026 =

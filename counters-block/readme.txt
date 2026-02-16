@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, counters, counter, number counter block, Gutenberg block
 Requires at least: 6.5+
 Tested up to: 6.9
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -254,6 +254,12 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Changelog ==
 
+= 2.0.4 – 16 Feb 2026 =
+* Fixed issues in editor-only Theme Switcher UI.
+* Improved Popover-based theme switching stability.
+* No frontend changes (editor-only fix).
+
+
 = 2.0.3 – 7 Feb 2026 =
 * Enhanced the Theme Switcher UI for the Counter block (editor-only).
 * Theme selector now opens in a Popover for a cleaner experience.
@@ -331,6 +337,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Upgrade Notice ==
+
+= 2.0.4 =
+Fixes issues in the editor-only Theme Switcher UI.  
 
 = 2.0.2 =
 New Theme Alert! Version 2.0.2 introduces Theme 15: a fully customizable, SVG-powered Circular Progress Counter. You can now adjust ring thickness, size, and colors directly in the block settings. We've also streamlined the sidebar layout to make switching between your favorite themes faster than ever.

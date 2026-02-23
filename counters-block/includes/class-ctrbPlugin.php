@@ -23,9 +23,10 @@ if (!class_exists('CTRBPlugin')) {
 
 
 			if ('counters-block' == $typenow) {
+				$assets = include CTRB_DIR_PATH . 'build/admin-dashboard.asset.php';
 				wp_enqueue_script('admin-post-js', CTRB_DIR_URL . 'build/admin-post.js', [], CTRB_VERSION, true);
 				wp_enqueue_style('admin-post-css', CTRB_DIR_URL . 'build/admin-post.css', [], CTRB_VERSION);
-				wp_enqueue_script('ctrb-admin-dashboard-js', CTRB_DIR_URL . 'build/admin-dashboard.js', ['react', 'react-dom'], CTRB_VERSION, true);
+				wp_enqueue_script('ctrb-admin-dashboard-js', CTRB_DIR_URL . 'build/admin-dashboard.js', array_merge($assets['dependencies'], ['wp-util']), CTRB_VERSION, true);
 				wp_enqueue_style('ctrb-admin-dashboard-css', CTRB_DIR_URL . 'build/admin-dashboard.css', [], CTRB_VERSION);
 			}
 		}

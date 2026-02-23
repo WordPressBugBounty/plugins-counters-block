@@ -69,7 +69,8 @@ if (!class_exists('CTRBAdmin')) {
         {
             $data = [
                 'version' => CTRB_VERSION,
-                'isPremium' => ctrbIsPremium()
+                'isPremium' => ctrbIsPremium(),
+                'hasPro' => CTRB_HAS_PRO,
             ];
             wp_add_inline_script(
                 'ctrb-admin-dashboard',
@@ -84,7 +85,13 @@ if (!class_exists('CTRBAdmin')) {
 
 ?>
             <div id='ctrb-admin-dashboard'
-                data-info='<?php echo esc_attr(wp_json_encode(['version' => CTRB_VERSION, 'isPremium' => ctrbIsPremium()])); ?>'></div>
+                data-info='<?php echo esc_attr(wp_json_encode([
+                                'version' => CTRB_VERSION,
+                                'isPremium' => ctrbIsPremium(),
+                                'hasPro' => CTRB_HAS_PRO,
+                                'licenseActiveNonce' => wp_create_nonce('bplLicenseActive'),
+
+                            ])); ?>'></div>
 <?php
         }
         // set custom columns for edit page

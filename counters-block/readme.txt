@@ -1,10 +1,10 @@
 === Counters Block – Animated Number Counters for Stats and Goals ===
 Contributors: bplugins, abuhayat, charlescormier, asadsuzan, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
-Tags: block, counters, counter, number counter block, Gutenberg block
+Tags: block, counter, animated counter, stats, number counter
 Requires at least: 6.5+
 Tested up to: 6.9
-Stable tag: 2.0.4
+Stable tag: 2.0.5
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -253,6 +253,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 2.0.5 – 16 Feb 2026 =
+* Update: Redesigned and modernized admin dashboard interface.
 
 = 2.0.4 – 16 Feb 2026 =
 * Fixed issues in editor-only Theme Switcher UI.

@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Counters Block
  * Description: Display Number as animated counter( start to end ).
- * Version: 2.0.4
+ * Version: 2.0.5
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -18,7 +18,7 @@ if ( function_exists( 'cb_fs' ) ) {
     cb_fs()->set_basename( false, __FILE__ );
 } else {
     // Constant
-    define( 'CTRB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && ('localhost' === $_SERVER['HTTP_HOST'] || 'plugins.local' === $_SERVER['HTTP_HOST']) ? time() : '2.0.4' ) );
+    define( 'CTRB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && ('localhost' === $_SERVER['HTTP_HOST'] || 'plugins.local' === $_SERVER['HTTP_HOST']) ? time() : '2.0.5' ) );
     define( 'CTRB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'CTRB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'CTRB_HAS_PRO', file_exists( CTRB_DIR_PATH . 'vendor/freemius/start.php' ) );
@@ -63,4 +63,7 @@ if ( function_exists( 'cb_fs' ) ) {
     // ... Your plugin's main file logic ...
     require_once CTRB_DIR_PATH . "includes/class-ctrbPlugin.php";
     new CTRBPlugin();
+    if ( CTRB_HAS_PRO ) {
+        require_once CTRB_DIR_PATH . 'includes/LicenseActivation.php';
+    }
 }

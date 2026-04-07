@@ -22,7 +22,7 @@ if (!class_exists('CTRBPBlock')) {
                 'hasPro' => defined('CTRB_HAS_PRO') ? CTRB_HAS_PRO : false,
                 'version' => defined('CTRB_VERSION') ? CTRB_VERSION : '',
             ];
-            $inline = 'window.ctrbPrimiumProps = Object.assign(window.ctrbPrimiumProps || {}, ' . wp_json_encode($data) . ');';
+            $inline = 'window.ctrbPremiumProps = Object.assign(window.ctrbPremiumProps || {}, ' . wp_json_encode($data) . ');';
             wp_add_inline_script($handle, $inline, 'before');
             wp_enqueue_script($handle);
         }

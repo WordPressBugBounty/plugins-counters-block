@@ -89,7 +89,7 @@ if (!class_exists('CTRBAdmin')) {
                                 'version' => CTRB_VERSION,
                                 'isPremium' => ctrbIsPremium(),
                                 'hasPro' => CTRB_HAS_PRO,
-                                'licenseActiveNonce' => wp_create_nonce('bplLicenseActive'),
+                                'licenseActiveNonce' => wp_create_nonce('ctrbLicenseActivation'),
 
                             ])); ?>'></div>
 <?php

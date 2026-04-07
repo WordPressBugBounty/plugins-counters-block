@@ -3,7 +3,7 @@
   "apiVersion": 2,
   "name": "ctrb/counters",
   "title": "Counters",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Display Number as animated counter.",
   "category": "widgets",
   "keywords": [

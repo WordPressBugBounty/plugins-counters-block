@@ -8,6 +8,59 @@ if (!class_exists('CTRBPlugin')) {
 			add_action('plugins_loaded', [$this, 'load_dependencies']);
 			add_action('admin_enqueue_scripts', [$this, 'ctrbAdminScripts']);
 			add_shortcode('counters-block', [$this, 'ctrbShortcode']);
+			add_action('rest_api_init', [$this, 'register_rest_endpoints']);
+		}
+
+		public function register_rest_endpoints()
+		{
+			register_rest_route('counters-block/v1', '/stats', [
+				'methods'             => 'GET',
+				'callback'            => [$this, 'get_stats_callback'],
+				'permission_callback' => function () {
+					return current_user_can('edit_posts');
+				}
+			]);
+		}
+
+		public function get_stats_callback($request)
+		{
+			$type  = $request->get_param('type');
+			$stat  = $request->get_param('stat');
+			$value = 0;
+
+			if ($type === 'wp_stats') {
+				switch ($stat) {
+					case 'posts':
+						$value = ctrbGetWpPostsCount();
+						break;
+					case 'pages':
+						$value = ctrbGetWpPagesCount();
+						break;
+					case 'comments':
+						$value = ctrbGetWpCommentsCount();
+						break;
+					case 'users':
+						$value = ctrbGetWpUsersCount();
+						break;
+				}
+			} elseif ($type === 'wc_stats' && class_exists('WooCommerce')) {
+				switch ($stat) {
+					case 'sales':
+						$value = ctrbGetWcSales();
+						break;
+					case 'orders':
+						$value = ctrbGetWcOrdersCount();
+						break;
+					case 'products':
+						$value = ctrbGetWcProductsCount();
+						break;
+					case 'customers':
+						$value = ctrbGetWcCustomersCount();
+						break;
+				}
+			}
+
+			return new WP_REST_Response(['value' => (float) $value], 200);
 		}
 
 		public function load_dependencies()

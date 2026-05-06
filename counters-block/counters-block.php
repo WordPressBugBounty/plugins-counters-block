@@ -21,6 +21,8 @@ if (!class_exists('CTRBPBlock')) {
                 'isPremium' => function_exists('ctrbIsPremium') ? ctrbIsPremium() : false,
                 'hasPro' => defined('CTRB_HAS_PRO') ? CTRB_HAS_PRO : false,
                 'version' => defined('CTRB_VERSION') ? CTRB_VERSION : '',
+                'isWcActive' => class_exists('WooCommerce'),
+                'isWcInstalled' => file_exists(WP_PLUGIN_DIR . '/woocommerce/woocommerce.php'),
             ];
             $inline = 'window.ctrbPremiumProps = Object.assign(window.ctrbPremiumProps || {}, ' . wp_json_encode($data) . ');';
             wp_add_inline_script($handle, $inline, 'before');

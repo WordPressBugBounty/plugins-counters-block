@@ -3,7 +3,7 @@
   "apiVersion": 2,
   "name": "ctrb/counters",
   "title": "Counters",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Display Number as animated counter.",
   "category": "widgets",
   "keywords": [
@@ -13,6 +13,10 @@
   ],
   "textdomain": "counters-block",
   "attributes": {
+    "dataSource": {
+      "type": "string",
+      "default": "static"
+    },
     "align": {
       "type": "string",
       "default": "wide"
@@ -35,7 +39,9 @@
             "stagger": 0,
             "prefix": "",
             "suffix": "+",
-            "color": "#fff"
+            "color": "#fff",
+            "dataSource": "static",
+            "statType": "posts"
           },
           "label": {
             "text": "Products",
@@ -57,7 +63,9 @@
             "stagger": 0,
             "prefix": "",
             "suffix": "K+",
-            "color": "#fff"
+            "color": "#fff",
+            "dataSource": "static",
+            "statType": "posts"
           },
           "label": {
             "text": "Customers",
@@ -79,7 +87,9 @@
             "stagger": 0,
             "prefix": "",
             "suffix": "",
-            "color": "#fff"
+            "color": "#fff",
+            "dataSource": "static",
+            "statType": "posts"
           },
           "label": {
             "text": "Awards",

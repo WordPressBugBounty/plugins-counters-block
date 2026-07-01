@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, counter, animated counter, stats, woocommerce
 Requires at least: 6.5+
 Tested up to: 7.0
-Stable tag: 2.0.7
+Stable tag: 2.0.8
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -29,7 +29,7 @@ Stop manual updates! Counters Block can now automatically fetch and display live
 ### 🎨 Stunning Designs & Animations
 With 16 modern counter layouts (including the new **Circular Progress Counter**), powerful animation triggers, and full responsive controls, you have complete creative freedom without touching a single line of code.
 
-
+**[Live Demos](https://bblockswp.com/demo/counters-block-all/)**
 
 ==💡 Perfect For:==
 - **E-commerce:** Live sales counters & happy customer stats.
@@ -191,6 +191,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Changelog ==
 
+= 2.0.8 – 28 June 2026 =
+* **Fix**: Prevent recursive the_content filtering by rendering blocks directly
+
 = 2.0.7 – 28 April 2026 =
 * **New Features**: Added Data Source system with multiple options (Static values, WP Core Stats, WooCommerce Stats).
 * **WP Core Stats**: Support for Posts, Comments, and Users (now including Pages).
@@ -288,6 +291,11 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Upgrade Notice ==
+
+= 2.0.8 =
+* Prevent recursive the_content filtering by rendering blocks directly.
+
+
 
 = 2.0.7 =
 Major Update: Dynamic stats just got smarter! 🚀 This update adds Total Pages, Comments, and Users to WP Core stats, introduces Smart Customer Counting (including Guests) for WooCommerce, and improves sales accuracy with HPOS support.

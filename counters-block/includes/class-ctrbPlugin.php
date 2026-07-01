@@ -123,7 +123,14 @@ if (!class_exists('CTRBPlugin')) {
 
 		function ctrbDisplayContent($post)
 		{
-			$content = apply_filters('the_content', $post->post_content);
+			$content = $post->post_content;
+			if (function_exists('do_blocks')) {
+				$content = do_blocks($content);
+			}
+			if (function_exists('wp_filter_content_tags')) {
+				$content = wp_filter_content_tags($content);
+			}
+			$content = do_shortcode($content);
 			return $content;
 		}
 	}

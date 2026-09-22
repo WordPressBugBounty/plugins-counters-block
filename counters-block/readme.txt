@@ -1,15 +1,15 @@
 === Counters Block – Animated Number Counters, Stats & Dynamic KPIs ===
-Contributors: bplugins, abuhayat, charlescormier, asadsuzan, freemius
+Contributors: bplugins, abuhayat, asadsuzan, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
-Tags: block, counter, animated counter, stats, woocommerce
+Tags: block, counter, animated-number, stats, milestones,
 Requires at least: 6.5+
-Tested up to: 7.0
-Stable tag: 2.0.8
-Requires PHP: 7.1
+Tested up to: 7.1
+Stable tag: 2.1.8
+Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Display animated number counters, live WooCommerce sales, and WordPress stats in real-time with this high-performance Gutenberg block.
+Animated number counters for Gutenberg. Show stats, milestones, KPIs, and live WooCommerce or WordPress data with 16 counter themes.
 
 == Description ==
 
@@ -190,6 +190,12 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 2.1.8 - 22 Septembar 2026 = 
+
+* **Update**: latest freemius-wordpress sdk
+* **Update**: removed 404 links
+
 
 = 2.0.8 – 28 June 2026 =
 * **Fix**: Prevent recursive the_content filtering by rendering blocks directly

@@ -1,10 +1,10 @@
 === Counters Block – Animated Number Counters, Stats & Dynamic KPIs ===
 Contributors: bplugins, abuhayat, asadsuzan, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
-Tags: block, counter, animated number, stats, milestones
+Tags: block, counter, animated-number, stats, milestones,
 Requires at least: 6.5+
 Tested up to: 7.1
-Stable tag: 2.1.8
+Stable tag: 2.1.9
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
